@@ -74,18 +74,18 @@ Specification
 [Describe the syntax and semantics of any new language feature.]
 
 1. When a module (or package) includes a version number, the version SHOULD be
-   available in the __version__ attribute.
+   available in the `__version__` attribute.
 2. For modules which live inside a namespace package, the module SHOULD include
-   the __version__ attribute. The namespace package itself SHOULD NOT include
-   its own __version__ attribute.
-3. The __version__ attribute’s value MUST be a string.  Module version
+   the `__version__` attribute. The namespace package itself SHOULD NOT include
+   its own `__version__` attribute.
+3. The `__version__` attribute’s value MUST be a string.  Module version
    numbers SHOULD conform to the normalized version format specified in PEP 440.
 4. Module version numbers MAY contain version control system supplied information or
    other semantically different version numbers (e.g. underlying library
    version number) consistent with PEP 440.
-5. The __version__ attribute SHOULD be consistent with the importlib.metadata
+5. The `__version__` attribute SHOULD be consistent with the `importlib.metadata`
    information.
-6. Packages MAY dynamically compute the __version__ string at runtime.
+6. Packages MAY dynamically compute the `__version__` string at runtime.
 
 
 Backwards Compatibility
@@ -124,10 +124,10 @@ Rejected Ideas
 [Why certain ideas that were brought while discussing this PEP were not
 ultimately pursued.]
 
-**relying solely on importlib**
+**relying solely on `importlib`**
 
 As discussed above there are many cases where the metadata may not exist and
-importlib is solving a different problem.  Additionally accessing an attribute
+`importlib` is solving a different problem.  Additionally accessing an attribute
 is a very simple ergonomic API to access the version of a module currently in
 your namespace.
 
@@ -136,7 +136,7 @@ Open Issues
 
 [Any points that are still being decided/discussed.]
 
-Deferring any discussion of if modules should automatically fallback to importlib
+Deferring any discussion of if modules should automatically fallback to `importlib`
 when the user access `__version__` and it is not otherwise defined.
 
 None
