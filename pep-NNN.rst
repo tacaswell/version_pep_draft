@@ -60,7 +60,7 @@ Rationale
 
 We chose the name `__version__` for the attribute because there is a long
 standing convention of using the attribute for this purpose.  There was
-PEP 396 [0] from 2011 which was recently abandoned and is well established
+PEP 396 [1]_ from 2011 which was recently abandoned and is well established
 in the Scientific Python community [maybe get numbers?].  The specification
 in this PEP is a lightly adapted version of the text in PEP 396.
 
@@ -146,7 +146,8 @@ Footnotes
 
 [A collection of footnotes cited in the PEP, and a place to list non-inline hyperlink targets.]
 
-[0] https://peps.python.org/pep-0396/
+.. [1] PEP 396 - Module Version Numbers
+   https://peps.python.org/pep-0396/
 
 Copyright
 =========
