@@ -30,7 +30,7 @@ Motivation
 
 In many contexts it useful to know the run-time version of an imported module.
 This can be used both for attaching meta-data for provenance or for feature/bug
-gating. While the pypa has made progress on defining and accessing package
+gating. While the PyPA has made progress on defining and accessing package
 versions for distributions and environment solving, run time versions have
 different use cases.
 
