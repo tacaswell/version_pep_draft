@@ -64,7 +64,7 @@ PEP 396 [1]_ from 2011 which was recently abandoned and is well established
 in the Scientific Python community [maybe get numbers?].  The specification
 in this PEP is a lightly adapted version of the text in PEP 396.
 
-We propose to use PEP 440 for the version specification to be consistent with
+We propose to use PEP 440 [2]_ for the version specification to be consistent with
 the other version string in the Python ecosystem.
 
 
@@ -142,13 +142,16 @@ when the user access ``__version__`` and it is not otherwise defined.
 
 None
 
-Footnotes
-=========
+References
+==========
 
-[A collection of footnotes cited in the PEP, and a place to list non-inline hyperlink targets.]
+[A collection of references cited in the PEP, and a place to list non-inline hyperlink targets.]
 
 .. [1] PEP 396 - Module Version Numbers
    https://peps.python.org/pep-0396/
+
+.. [2] PEP 440 - Version Identification and Dependency Specification
+   https://peps.python.org/pep-0440/
 
 Copyright
 =========
