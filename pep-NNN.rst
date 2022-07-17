@@ -142,10 +142,10 @@ when the user access ``__version__`` and it is not otherwise defined.
 
 None
 
-Footnotes
-=========
+References
+==========
 
-[A collection of footnotes cited in the PEP, and a place to list non-inline hyperlink targets.]
+[A collection of references cited in the PEP, and a place to list non-inline hyperlink targets.]
 
 .. [1] PEP 396 - Module Version Numbers
    https://peps.python.org/pep-0396/
