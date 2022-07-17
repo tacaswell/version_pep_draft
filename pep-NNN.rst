@@ -36,8 +36,8 @@ different use cases.
 
 Not every importable Python module is necessarily or can be installed with the
 proper meta-data, but these modules still need access to run-time version
-information.  Local modules (e.g. `.py` file next to an application) are
-extremely useful as are other `$PYTHONPATH` manipulations. Additionally,
+information.  Local modules (e.g. ``.py`` file next to an application) are
+extremely useful as are other ``$PYTHONPATH`` manipulations. Additionally,
 modules imported via the import hook machinery may lack the file structure of a
 traditional package.  Given the richness of the import machinery in Python the
 simplest way to determine what will be imported is to empirically check.  A
@@ -48,7 +48,7 @@ being able verify the version of a currently imported module --- independent of
 the package management system --- is invaluable for debugging and traceability.
 
 
-We are standardizing the long-standing convention of attaching a `__version__`
+We are standardizing the long-standing convention of attaching a ``__version__``
 attribute to the module to provide users access to the run time version of a
 module.
 
@@ -58,7 +58,7 @@ Rationale
 
 [Describe why particular design decisions were made.]
 
-We chose the name `__version__` for the attribute because there is a long
+We chose the name ``__version__`` for the attribute because there is a long
 standing convention of using the attribute for this purpose.  There was
 PEP 396 [1]_ from 2011 which was recently abandoned and is well established
 in the Scientific Python community [maybe get numbers?].  The specification
@@ -74,18 +74,18 @@ Specification
 [Describe the syntax and semantics of any new language feature.]
 
 1. When a module (or package) includes a version number, the version SHOULD be
-   available in the `__version__` attribute.
+   available in the ``__version__`` attribute.
 2. For modules which live inside a namespace package, the module SHOULD include
-   the `__version__` attribute. The namespace package itself SHOULD NOT include
-   its own `__version__` attribute.
-3. The `__version__` attribute’s value MUST be a string.  Module version
+   the ``__version__`` attribute. The namespace package itself SHOULD NOT include
+   its own ``__version__`` attribute.
+3. The ``__version__`` attribute’s value MUST be a string.  Module version
    numbers SHOULD conform to the normalized version format specified in PEP 440.
 4. Module version numbers MAY contain version control system supplied information or
    other semantically different version numbers (e.g. underlying library
    version number) consistent with PEP 440.
-5. The `__version__` attribute SHOULD be consistent with the `importlib.metadata`
+5. The ``__version__`` attribute SHOULD be consistent with the ``importlib.metadata``
    information.
-6. Packages MAY dynamically compute the `__version__` string at runtime.
+6. Packages MAY dynamically compute the ``__version__`` string at runtime.
 
 
 Backwards Compatibility
@@ -108,8 +108,9 @@ How to Teach This
 
 [How to teach users, new and experienced, how to apply the PEP to their work.]
 
-Q: I have done `import MyModule`, what is it's version?
-A: `MyModule.__version__` !
+Q: I have done ``import MyModule``, what is it's version?
+
+A: ``MyModule.__version__`` !
 
 Reference Implementation
 ========================
@@ -124,10 +125,10 @@ Rejected Ideas
 [Why certain ideas that were brought while discussing this PEP were not
 ultimately pursued.]
 
-**relying solely on `importlib`**
+**relying solely on importlib**
 
 As discussed above there are many cases where the metadata may not exist and
-`importlib` is solving a different problem.  Additionally accessing an attribute
+``importlib`` is solving a different problem.  Additionally accessing an attribute
 is a very simple ergonomic API to access the version of a module currently in
 your namespace.
 
@@ -136,8 +137,8 @@ Open Issues
 
 [Any points that are still being decided/discussed.]
 
-Deferring any discussion of if modules should automatically fallback to `importlib`
-when the user access `__version__` and it is not otherwise defined.
+Deferring any discussion of if modules should automatically fallback to ``importlib``
+when the user access ``__version__`` and it is not otherwise defined.
 
 None
 
