@@ -109,6 +109,7 @@ How to Teach This
 [How to teach users, new and experienced, how to apply the PEP to their work.]
 
 Q: I have done ``import MyModule``, what is it's version?
+
 A: ``MyModule.__version__`` !
 
 Reference Implementation
