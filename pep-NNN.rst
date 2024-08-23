@@ -1,7 +1,7 @@
 PEP: <REQUIRED: pep number>
 Title: <REQUIRED: pep title>
 Author: Thomas Caswell <tcaswell@gmail.com>, Christopher Barker <PythonCHB@gmail.com>
-Sponsor: Michael Droettboom
+Sponsor: Michael Droettboom <mdboom@gmail.com>
 PEP-Delegate: <PEP delegate's real name>
 Discussions-To: <REQUIRED: URL of current canonical discussion thread>
 Status: Draft
