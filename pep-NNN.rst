@@ -151,9 +151,9 @@ Specification
 
 [Describe the syntax and semantics of any new language feature.]
 
-1. When a module (or package) includes a version number, the version SHOULD be
+1. When a module (or package) includes a version number, the version MUST be
    available in the ``__version__`` attribute of the top-level module.
-2. For modules which live inside a namespace package, the module SHOULD include
+2. For modules which live inside a namespace package, the module MUST include
    the ``__version__`` attribute. The namespace package itself SHOULD NOT include
    its own ``__version__`` attribute.
 3. The ``__version__`` attribute’s value MUST be a string.  Module version
@@ -172,7 +172,7 @@ Backwards Compatibility
 
 [Describe potential impact and severity on pre-existing code.]
 
-This is already a well established convention -- there are three possible conditions of currently available packages:
+This is already a well established convention -- there are four possible conditions of currently available packages:
 
 1. It already has a ``__version__`` attribute: no impact.
 
@@ -180,6 +180,7 @@ This is already a well established convention -- there are three possible condit
 
 3. It has an attribute with a different name (e.g. ``VERSION``), or in a different location, such as a ``version.py`` file. In this case, the package would need to add a ``__version__`` attribute to be compliant, but could maintain an alias in the old name to ease the transition to the new format (and keep that alias indefinitely, if desired).
 
+4. It has an existing `__version__` attribute, but its value is not a PEP 440-conforming string. We expect this case to be exceedingly rare, and already puts the package in a special case where PEP 440 non-compliance is already being worked around.
 
 Security Implications
 =====================
