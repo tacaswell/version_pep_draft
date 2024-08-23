@@ -209,7 +209,7 @@ Option 2: put the line::
   __version__ = importlib.metadata.version("the_distribution_name")
 
 in your module or packages ``__init__.py`` file.
-Note that this option incurs a non-negligible module import cost, and requires that the packge be properly installed for it to work -- use with caution.
+Note that this option incurs a non-negligible module import cost, and requires that the package be properly installed for it to work -- use with caution.
 
 Reference Implementation
 ========================
