@@ -100,14 +100,14 @@ and
 
 "what is the version of this imported module?" are two different, if often closely related, questions.
 
-`importlib.metadata.version` is the standard way to obtain the version of a given installed distribution package.
+``importlib.metadata.version`` is the standard way to obtain the version of a given installed distribution package.
 
 This PEP proposes that the ``__version__`` attribute be the appropriate way to obtain the version of an imported package (module) at run time.
 
 Alternative ways of making modules importable
 ---------------------------------------------
 
-Not every importable Python module necessarily is, or can, be installed with the
+Not every importable Python module necessarily is, or can be, installed with the
 proper meta-data.
 But users of these modules may still need access to run-time version
 information.
